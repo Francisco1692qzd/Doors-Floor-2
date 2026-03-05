@@ -164,6 +164,9 @@ task.spawn(function()
 						v.Character.Humanoid:TakeDamage(100)
 					end
 
+					remotesFolder.Parent.GameStats["Player_".. v.Character.Name].Total.DeathCause.Value = "Depth"
+					firesignal(remotesFolder.DeathHint.OnClientEvent, {"I'd never expect to have a rare entity...", "You can feel him nearby whenever the lights flicker...", "Hide or search for a safe spot!"})
+
 					task.wait(0.7)
 					gui:Destroy()
 					soundJumpscare:Destroy()

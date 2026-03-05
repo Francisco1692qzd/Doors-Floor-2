@@ -165,7 +165,7 @@ task.spawn(function()
 						v.Character.Humanoid:TakeDamage(100)
 					end
 					remotesFolder.Parent.GameStats["Player_".. v.Character.Name].Total.DeathCause.Value = "Rage"
-					firesignal(remotesFolder.DeathHint.OnClientEvent, {"You died to who you call Rage...", "His presence is known by rebound and increasing its limit speed..", "Hide or search for a safe spot!"})
+					firesignal(remotesFolder.DeathHint.OnClientEvent, {"You died to who you call Rage...", "His presence is known by rebound and increasing its limit speed..", "Hide or search for a safe spot!"}, "Blue")
 
 					task.wait(0.7)
 					gui:Destroy()

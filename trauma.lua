@@ -65,7 +65,7 @@ task.spawn(function()
 	end
 	local currentRoom = workspace.CurrentRooms:FindFirstChild(roomValues.Value)
 	if currentRoom then
-		moduleScripts.Module_Events.flicker(currentRoom, 2)
+		moduleScripts.Module_Events.flicker(currentRoom, 4)
 	end
 
 	if G.LoadGithubModel then

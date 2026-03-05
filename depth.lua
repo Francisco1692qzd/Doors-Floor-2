@@ -180,6 +180,7 @@ task.spawn(function()
 		if gruh:FindFirstChild(tostring(i)) then
 			local room = gruh[i]
 			if room and room:FindFirstChild("Nodes") then
+				moduleScripts.Module_Events.shatter(room)
 				local nodes = room["Nodes"]
 				for v = 1, #nodes:GetChildren() do
 					if nodes:FindFirstChild(tostring(v)) then

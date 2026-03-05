@@ -96,6 +96,8 @@ task.spawn(function()
 						end
 					end
 					v.Character.Humanoid:TakeDamage(100)
+					remotesFolder.Parent.GameStats["Player_".. v.Character.Name].Total.DeathCause.Value = "Silence"
+					firesignal(remotesFolder.DeathHint.OnClientEvent, {"You died to who you call Silence...", "His presence is known by coming through the next door...", "Hide or search for a safe spot!"})
 				end
 			end
 			if v.Character ~= nil and v.Character.HumanoidRootPart ~= nil and (pr.Position - v.Character.HumanoidRootPart.Position).magnitude <= val then
